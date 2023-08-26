@@ -120,7 +120,7 @@ Error generating stack: `+i.message+`
             border: 2px solid #2196f3;
             box-shadow: 0 0 2px #2196f3;
         }
-    `;return S.jsxs("section",{className:e,children:[S.jsxs("div",{className:"inp-name inps",children:[S.jsx("label",{htmlFor:"name",children:"Name"}),S.jsx("input",{type:"text",id:"name",name:"name",placeholder:"e.g. Mojtaba Salehi"})]}),S.jsxs("div",{className:"inp-email inps",children:[S.jsx("label",{htmlFor:"email",children:"Email Address"}),S.jsx("input",{type:"email",id:"email",name:"email",placeholder:"e.g. mojtaba@salehi.com"})]}),S.jsxs("div",{className:"inp-number inps",children:[S.jsx("label",{htmlFor:"number",children:"Phone Number"}),S.jsx("input",{type:"tel",id:"number",className:"number",placeholder:"e.g. +989123456789"})]})]})},gh="/multi-step-form/assets/icon-pro-8d9f4718.svg",wh="/multi-step-form/assets/icon-arcade-e118291f.svg",xh="/multi-step-form/assets/icon-advanced-66ce2237.svg",kh=({imgSrc:e,price:n,planType:t,name:r,setPlayPlan:l,playPlan:i})=>{let o=Pe`
+    `;return S.jsxs("section",{className:e,children:[S.jsxs("div",{className:"inp-name inps",children:[S.jsx("label",{htmlFor:"name",children:"Name"}),S.jsx("input",{type:"text",id:"name",name:"name",placeholder:"e.g. Mojtaba Salehi"})]}),S.jsxs("div",{className:"inp-email inps",children:[S.jsx("label",{htmlFor:"email",children:"Email Address"}),S.jsx("input",{type:"email",id:"email",name:"email",placeholder:"e.g. mojtaba@salehi.com"})]}),S.jsxs("div",{className:"inp-number inps",children:[S.jsx("label",{htmlFor:"number",children:"Phone Number"}),S.jsx("input",{type:"tel",id:"number",className:"number",placeholder:"e.g. +989123456789"})]})]})},gh="/assets/icon-pro-8d9f4718.svg",wh="/assets/icon-arcade-e118291f.svg",xh="/assets/icon-advanced-66ce2237.svg",kh=({imgSrc:e,price:n,planType:t,name:r,setPlayPlan:l,playPlan:i})=>{let o=Pe`
         display: inline-block;
         width: 150px;
         height: 180px;
@@ -307,7 +307,7 @@ Error generating stack: `+i.message+`
         .total-price p {
             color: hsl(231, 11%, 63%);
         }
-    `,l="$9/mo",i=0;switch(t){case"Arcade":l=n=="mo"?"$9/mo":"$90/yr",i+=n=="mo"?9:90;break;case"Advanced":l=n=="mo"?"$12/mo":"$120/yr",i+=n=="mo"?12:120;break;case"Pro":l=n=="mo"?"$15/mo":"$150/yr",i+=n=="mo"?15:150;break;default:l=l;break}return S.jsxs("section",{className:r,children:[S.jsxs("div",{className:"play-plan",children:[S.jsxs("h3",{children:[t,"(",n,")"]}),S.jsx("h3",{children:l})]}),S.jsx("hr",{}),e.map(o=>(i+=o.price,S.jsx(_h,{name:o.ons,price:o.price,planType:n},o.ons))),S.jsxs("div",{className:"total-price",children:[S.jsx("p",{children:"Total"}),S.jsxs("h2",{children:["$",i,"/",n]})]})]})},Ph="/multi-step-form/assets/icon-thank-you-56c10800.svg",zh=()=>{let e=Pe`
+    `,l="$9/mo",i=0;switch(t){case"Arcade":l=n=="mo"?"$9/mo":"$90/yr",i+=n=="mo"?9:90;break;case"Advanced":l=n=="mo"?"$12/mo":"$120/yr",i+=n=="mo"?12:120;break;case"Pro":l=n=="mo"?"$15/mo":"$150/yr",i+=n=="mo"?15:150;break;default:l=l;break}return S.jsxs("section",{className:r,children:[S.jsxs("div",{className:"play-plan",children:[S.jsxs("h3",{children:[t,"(",n,")"]}),S.jsx("h3",{children:l})]}),S.jsx("hr",{}),e.map(o=>(i+=o.price,S.jsx(_h,{name:o.ons,price:o.price,planType:n},o.ons))),S.jsxs("div",{className:"total-price",children:[S.jsx("p",{children:"Total"}),S.jsxs("h2",{children:["$",i,"/",n]})]})]})},Ph="/assets/icon-thank-you-56c10800.svg",zh=()=>{let e=Pe`
     display : flex;
     flex-direction: column;
     align-items : center;
