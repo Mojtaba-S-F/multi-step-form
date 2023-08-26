@@ -76,18 +76,25 @@ Error generating stack: `+i.message+`
             font-size : 22px;
             transition : 0.4s ;
         }
-    `;return S.jsxs("div",{class:r,children:[e==t?S.jsx("span",{class:"step-num active",children:e}):S.jsx("span",{class:"step-num",children:e}),S.jsxs("div",{class:"step-text",children:[S.jsxs("span",{class:"txt-1",children:["STEP ",e]}),S.jsx("span",{class:"txt-2",children:n})]})]})},vh=({activePage:e})=>{let n=Pe`
+    `;return S.jsxs("div",{class:r,children:[e==t?S.jsx("span",{class:"step-num active",children:e}):S.jsx("span",{class:"step-num",children:e}),S.jsxs("div",{class:"step-text",children:[S.jsxs("span",{class:"txt-1",children:["STEP ",e]}),S.jsx("span",{class:"txt-2",children:n})]})]})},vh="/multi-step-form/assets/bg-sidebar-desktop-e6d2744a.svg",yh=({activePage:e})=>{let n=Pe`
         margin-left: 5px;
         width: 30%;
-        background: url("./src/assets/images/bg-sidebar-desktop.svg") no-repeat
-            center center/cover;
-        border-radius: 20px;
         height: 98%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-    `,t=[{stepNum:1,stepText:"YOUR INFO"},{stepNum:2,stepText:"SELECT PLAN"},{stepNum:3,stepText:"ADD-ONS"},{stepNum:4,stepText:"SUMMARY"}];return S.jsx("aside",{className:n,children:t.map(r=>S.jsx(mh,{stepNum:r.stepNum,stepText:r.stepText,activePage:e}))})},yh=()=>{let e=Pe`
+        position : relative;
+        z-index : 1;
+        img{
+            position : absolute;
+            z-index : -1;
+            width : 100%;
+            height : 100%;
+            border-radius: 20px;
+
+        }
+    `,t=[{stepNum:1,stepText:"YOUR INFO"},{stepNum:2,stepText:"SELECT PLAN"},{stepNum:3,stepText:"ADD-ONS"},{stepNum:4,stepText:"SUMMARY"}];return S.jsxs("aside",{className:n,children:[S.jsx("img",{src:vh,alt:"background"}),t.map(r=>S.jsx(mh,{stepNum:r.stepNum,stepText:r.stepText,activePage:e}))]})},gh=()=>{let e=Pe`
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -120,7 +127,7 @@ Error generating stack: `+i.message+`
             border: 2px solid #2196f3;
             box-shadow: 0 0 2px #2196f3;
         }
-    `;return S.jsxs("section",{className:e,children:[S.jsxs("div",{className:"inp-name inps",children:[S.jsx("label",{htmlFor:"name",children:"Name"}),S.jsx("input",{type:"text",id:"name",name:"name",placeholder:"e.g. Mojtaba Salehi"})]}),S.jsxs("div",{className:"inp-email inps",children:[S.jsx("label",{htmlFor:"email",children:"Email Address"}),S.jsx("input",{type:"email",id:"email",name:"email",placeholder:"e.g. mojtaba@salehi.com"})]}),S.jsxs("div",{className:"inp-number inps",children:[S.jsx("label",{htmlFor:"number",children:"Phone Number"}),S.jsx("input",{type:"tel",id:"number",className:"number",placeholder:"e.g. +989123456789"})]})]})},gh="/assets/icon-pro-8d9f4718.svg",wh="/assets/icon-arcade-e118291f.svg",xh="/assets/icon-advanced-66ce2237.svg",kh=({imgSrc:e,price:n,planType:t,name:r,setPlayPlan:l,playPlan:i})=>{let o=Pe`
+    `;return S.jsxs("section",{className:e,children:[S.jsxs("div",{className:"inp-name inps",children:[S.jsx("label",{htmlFor:"name",children:"Name"}),S.jsx("input",{type:"text",id:"name",name:"name",placeholder:"e.g. Mojtaba Salehi"})]}),S.jsxs("div",{className:"inp-email inps",children:[S.jsx("label",{htmlFor:"email",children:"Email Address"}),S.jsx("input",{type:"email",id:"email",name:"email",placeholder:"e.g. mojtaba@salehi.com"})]}),S.jsxs("div",{className:"inp-number inps",children:[S.jsx("label",{htmlFor:"number",children:"Phone Number"}),S.jsx("input",{type:"tel",id:"number",className:"number",placeholder:"e.g. +989123456789"})]})]})},wh="/multi-step-form/assets/icon-pro-8d9f4718.svg",xh="/multi-step-form/assets/icon-arcade-e118291f.svg",kh="/multi-step-form/assets/icon-advanced-66ce2237.svg",Sh=({imgSrc:e,price:n,planType:t,name:r,setPlayPlan:l,playPlan:i})=>{let o=Pe`
         display: inline-block;
         width: 150px;
         height: 180px;
@@ -147,7 +154,7 @@ Error generating stack: `+i.message+`
             font-weight: 400;
         }
         
-    `,u=()=>{l(r)};return S.jsxs("div",{className:`${o} ${i==r&&"selected-add-ons"}`,onClick:s=>u(),children:[S.jsx("img",{src:e,alt:""}),S.jsxs("div",{className:"box-text",children:[S.jsx("h3",{children:r}),S.jsx("p",{className:"box-price",children:t=="mo"?`$${n}/${t}`:`$${n*10}/${t}`}),S.jsx("p",{className:"box-type",children:t=="mo"?"":"2 months free"})]})]})},Sh=({planType:e,setPlanType:n,setPlayPlan:t,playPlan:r})=>{let l=Pe`
+    `,u=()=>{l(r)};return S.jsxs("div",{className:`${o} ${i==r&&"selected-add-ons"}`,onClick:s=>u(),children:[S.jsx("img",{src:e,alt:""}),S.jsxs("div",{className:"box-text",children:[S.jsx("h3",{children:r}),S.jsx("p",{className:"box-price",children:t=="mo"?`$${n}/${t}`:`$${n*10}/${t}`}),S.jsx("p",{className:"box-type",children:t=="mo"?"":"2 months free"})]})]})},Eh=({planType:e,setPlanType:n,setPlayPlan:t,playPlan:r,setOptions:l})=>{let i=Pe`
         .boxes {
             width: 100%;
             height: 200px;
@@ -233,7 +240,7 @@ Error generating stack: `+i.message+`
         .selected-add-ons {
             border-color: #2196f3 !important;
         }
-    `,i=[{name:"Arcade",price:9,imgSrc:wh},{name:"Advanced",price:12,imgSrc:xh},{name:"Pro",price:15,imgSrc:gh}],o=()=>{e=="mo"?n("yr"):n("mo")};return S.jsxs("section",{className:l,children:[S.jsx("div",{className:"boxes",children:i.map(u=>S.jsx(kh,{imgSrc:u.imgSrc,name:u.name,price:u.price,planType:e,setPlayPlan:t,playPlan:r},u.name))}),S.jsxs("div",{className:"switch-plan",children:[S.jsx("span",{className:e=="mo"&&"selected-plan",children:"Monthly"}),S.jsxs("label",{className:"switch",children:[S.jsx("input",{type:"checkbox",id:"plan-type",onChange:()=>o(),checked:e=="yr"}),S.jsx("span",{className:"slider round"})]}),S.jsx("span",{className:e=="yr"&&"selected-plan",children:"Yearly"})]})]})},Eh=({h2:e,p:n,price:t,planType:r,setOptions:l,options:i})=>{let o=Pe`
+    `,o=[{name:"Arcade",price:9,imgSrc:xh},{name:"Advanced",price:12,imgSrc:kh},{name:"Pro",price:15,imgSrc:wh}],u=()=>{e=="mo"?n("yr"):n("mo"),l([])};return S.jsxs("section",{className:i,children:[S.jsx("div",{className:"boxes",children:o.map(s=>S.jsx(Sh,{imgSrc:s.imgSrc,name:s.name,price:s.price,planType:e,setPlayPlan:t,playPlan:r},s.name))}),S.jsxs("div",{className:"switch-plan",children:[S.jsx("span",{className:e=="mo"&&"selected-plan",children:"Monthly"}),S.jsxs("label",{className:"switch",children:[S.jsx("input",{type:"checkbox",id:"plan-type",onChange:()=>u(),checked:e=="yr"}),S.jsx("span",{className:"slider round"})]}),S.jsx("span",{className:e=="yr"&&"selected-plan",children:"Yearly"})]})]})},Ch=({h2:e,p:n,price:t,planType:r,setOptions:l,options:i})=>{let o=Pe`
         padding: 20px;
         width: 90%;
         height: 80px;
@@ -262,7 +269,7 @@ Error generating stack: `+i.message+`
         .selected-add-ons {
             border-color: #2196f3 !important;
         }
-    `,[u,s]=hn.useState(!!i.find(p=>p.ons==e)),c=()=>{u==!1?(s(!0),l(p=>[...p,{ons:e,price:r=="mo"?t:t*10}])):(s(!1),l(p=>[...p].filter(h=>h.ons!=e)))};return S.jsxs("div",{class:`${o} ${u&&"selected-add-ons"}`,onClick:p=>c(),children:[S.jsx("div",{class:`add-ons-button ${u&&"selected-add-ons"}`,children:S.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"12",height:"9",viewBox:"0 0 12 9",children:S.jsx("path",{fill:"none",stroke:"#2196f3","stroke-width":u?3:0,d:"m1 4 3.433 3.433L10.866 1"})})}),S.jsxs("div",{class:"add-ons-txts",children:[S.jsx("h2",{children:e}),S.jsx("p",{children:n})]}),S.jsx("span",{class:"add-ons-price",children:r=="mo"?`$${t}/${r}`:`$${t*10}/${r}`})]})},Ch=({planType:e,setOptions:n,options:t})=>{let r=Pe`
+    `,[u,s]=hn.useState(!!i.find(p=>p.ons==e)),c=()=>{u==!1?(s(!0),l(p=>[...p,{ons:e,price:r=="mo"?t:t*10}])):(s(!1),l(p=>[...p].filter(h=>h.ons!=e)))};return S.jsxs("div",{class:`${o} ${u&&"selected-add-ons"}`,onClick:p=>c(),children:[S.jsx("div",{class:`add-ons-button ${u&&"selected-add-ons"}`,children:S.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"12",height:"9",viewBox:"0 0 12 9",children:S.jsx("path",{fill:"none",stroke:"#2196f3","stroke-width":u?3:0,d:"m1 4 3.433 3.433L10.866 1"})})}),S.jsxs("div",{class:"add-ons-txts",children:[S.jsx("h2",{children:e}),S.jsx("p",{children:n})]}),S.jsx("span",{class:"add-ons-price",children:r=="mo"?`$${t}/${r}`:`$${t*10}/${r}`})]})},_h=({planType:e,setOptions:n,options:t})=>{let r=Pe`
         display: flex;
         /* background-color: red; */
         flex-direction: column;
@@ -271,7 +278,7 @@ Error generating stack: `+i.message+`
         justify-content: start;
         align-items: center;
         /* background-color: red; */
-    `,l=[{h2:"Online Service",p:"Access to multiplayer games",price:1},{h2:"Larger Storage",p:"Extra 1TB of cloud save",price:2},{h2:"Customizable Profile",p:"Custom theme on your profile",price:1}];return S.jsx("section",{class:r,children:l.map(i=>S.jsx(Eh,{h2:i.h2,p:i.p,price:i.price,planType:e,setOptions:n,options:t}))})},_h=({name:e,price:n,planType:t})=>{let r=Pe`
+    `,l=[{h2:"Online Service",p:"Access to multiplayer games",price:1},{h2:"Larger Storage",p:"Extra 1TB of cloud save",price:2},{h2:"Customizable Profile",p:"Custom theme on your profile",price:1}];return S.jsx("section",{class:r,children:l.map(i=>S.jsx(Ch,{h2:i.h2,p:i.p,price:i.price,planType:e,setOptions:n,options:t}))})},Nh=({name:e,price:n,planType:t})=>{let r=Pe`
         display : flex;
         justify-content : space-between;
         align-items : center
@@ -284,7 +291,7 @@ Error generating stack: `+i.message+`
         h4:nth-child(2){
             color : hsl(231, 11%, 63%);
         }
-    `;return S.jsxs("div",{className:r,children:[S.jsx("h4",{children:e}),S.jsxs("h4",{children:["+$",n,"/",t]})]})},Nh=({options:e,planType:n,playPlan:t})=>{let r=Pe`
+    `;return S.jsxs("div",{className:r,children:[S.jsx("h4",{children:e}),S.jsxs("h4",{children:["+$",n,"/",t]})]})},Ph=({options:e,planType:n,playPlan:t})=>{let r=Pe`
         width: 100%;
         height: 100%;
         padding: 5px 20px;
@@ -307,7 +314,7 @@ Error generating stack: `+i.message+`
         .total-price p {
             color: hsl(231, 11%, 63%);
         }
-    `,l="$9/mo",i=0;switch(t){case"Arcade":l=n=="mo"?"$9/mo":"$90/yr",i+=n=="mo"?9:90;break;case"Advanced":l=n=="mo"?"$12/mo":"$120/yr",i+=n=="mo"?12:120;break;case"Pro":l=n=="mo"?"$15/mo":"$150/yr",i+=n=="mo"?15:150;break;default:l=l;break}return S.jsxs("section",{className:r,children:[S.jsxs("div",{className:"play-plan",children:[S.jsxs("h3",{children:[t,"(",n,")"]}),S.jsx("h3",{children:l})]}),S.jsx("hr",{}),e.map(o=>(i+=o.price,S.jsx(_h,{name:o.ons,price:o.price,planType:n},o.ons))),S.jsxs("div",{className:"total-price",children:[S.jsx("p",{children:"Total"}),S.jsxs("h2",{children:["$",i,"/",n]})]})]})},Ph="/assets/icon-thank-you-56c10800.svg",zh=()=>{let e=Pe`
+    `,l="$9/mo",i=0;switch(t){case"Arcade":l=n=="mo"?"$9/mo":"$90/yr",i+=n=="mo"?9:90;break;case"Advanced":l=n=="mo"?"$12/mo":"$120/yr",i+=n=="mo"?12:120;break;case"Pro":l=n=="mo"?"$15/mo":"$150/yr",i+=n=="mo"?15:150;break;default:l=l;break}return S.jsxs("section",{className:r,children:[S.jsxs("div",{className:"play-plan",children:[S.jsxs("h3",{children:[t,"(",n,")"]}),S.jsx("h3",{children:l})]}),S.jsx("hr",{}),e.map(o=>(i+=o.price,S.jsx(Nh,{name:o.ons,price:o.price,planType:n},o.ons))),S.jsxs("div",{className:"total-price",children:[S.jsx("p",{children:"Total"}),S.jsxs("h2",{children:["$",i,"/",n]})]})]})},zh="/multi-step-form/assets/icon-thank-you-56c10800.svg",jh=()=>{let e=Pe`
     display : flex;
     flex-direction: column;
     align-items : center;
@@ -325,7 +332,7 @@ Error generating stack: `+i.message+`
       margin : 0 30px;
       text-align : center;
     }
-  `;return S.jsxs("section",{className:e,children:[S.jsx("img",{src:Ph,alt:"icon ThankYou"}),S.jsx("h3",{children:"Thank you!"}),S.jsx("p",{children:"Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."})]})},jh=({activePage:e})=>{let n=Pe`
+  `;return S.jsxs("section",{className:e,children:[S.jsx("img",{src:zh,alt:"icon ThankYou"}),S.jsx("h3",{children:"Thank you!"}),S.jsx("p",{children:"Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."})]})},Lh=({activePage:e})=>{let n=Pe`
         width: 100%;
         height: 70%;
 
@@ -337,7 +344,7 @@ Error generating stack: `+i.message+`
             color: hsl(231, 11%, 63%);
         }
 
-    `;const[t,r]=hn.useState("Arcade"),[l,i]=hn.useState("mo");let[o,u]=hn.useState([]),s=[{h1:"Personal info",p:"Please provide your name, email address, and phone number."},{h1:"Select your plan",p:"You have the option of monthly or yearly billing."},{h1:"Pick add-ons",p:"Add-ons help enhance your gaming experience."},{h1:"Finishing up",p:"Double-check everything looks OK before confirming."}];return S.jsxs("main",{className:n,children:[e<=4&&S.jsxs("div",{class:"main-txts",children:[S.jsx("h1",{class:"main-h1",children:s[e-1].h1}),S.jsx("p",{class:"main-p",children:s[e-1].p})]}),e==1&&S.jsx(yh,{}),e==2&&S.jsx(Sh,{planType:l,setPlanType:i,setPlayPlan:r,playPlan:t}),e==3&&S.jsx(Ch,{planType:l,setOptions:u,options:o}),e==4&&S.jsx(Nh,{options:o,planType:l,playPlan:t}),e==5&&S.jsx(zh,{})]})},Lh=({activePage:e,setActivePage:n})=>{let t=Pe`
+    `;const[t,r]=hn.useState("Arcade"),[l,i]=hn.useState("mo");let[o,u]=hn.useState([]),s=[{h1:"Personal info",p:"Please provide your name, email address, and phone number."},{h1:"Select your plan",p:"You have the option of monthly or yearly billing."},{h1:"Pick add-ons",p:"Add-ons help enhance your gaming experience."},{h1:"Finishing up",p:"Double-check everything looks OK before confirming."}];return S.jsxs("main",{className:n,children:[e<=4&&S.jsxs("div",{class:"main-txts",children:[S.jsx("h1",{class:"main-h1",children:s[e-1].h1}),S.jsx("p",{class:"main-p",children:s[e-1].p})]}),e==1&&S.jsx(gh,{}),e==2&&S.jsx(Eh,{planType:l,setPlanType:i,setPlayPlan:r,playPlan:t,setOptions:u}),e==3&&S.jsx(_h,{planType:l,setOptions:u,options:o}),e==4&&S.jsx(Ph,{options:o,planType:l,playPlan:t}),e==5&&S.jsx(jh,{})]})},Th=({activePage:e,setActivePage:n})=>{let t=Pe`
         width: 100%;
         height: 20%;
         display: flex;
@@ -369,7 +376,7 @@ Error generating stack: `+i.message+`
             background-color: hsl(213, 96%, 18%);
             right: 50px;
         }
-    `,r=o=>{n(u=>u+1),console.log(e)},l=o=>{n(u=>u-1),console.log(e)},i=o=>{n(u=>u+1)};if(e<=4)return S.jsxs("div",{class:t,children:[e<=3&&S.jsx("button",{class:"next-btn",onClick:o=>r(),children:"Next Step"}),e!=1&&S.jsx("button",{class:"back-btn ",onClick:o=>l(),children:"Go Back"}),e==4&&S.jsx("button",{class:"confirm-btn",onClick:o=>i(),children:"Confirm"})]})},Th=()=>{let[e,n]=hn.useState(1),t=Pe`
+    `,r=o=>{n(u=>u+1),console.log(e)},l=o=>{n(u=>u-1),console.log(e)},i=o=>{n(u=>u+1)};if(e<=4)return S.jsxs("div",{class:t,children:[e<=3&&S.jsx("button",{class:"next-btn",onClick:o=>r(),children:"Next Step"}),e!=1&&S.jsx("button",{class:"back-btn ",onClick:o=>l(),children:"Go Back"}),e==4&&S.jsx("button",{class:"confirm-btn",onClick:o=>i(),children:"Confirm"})]})},Rh=()=>{let[e,n]=hn.useState(1),t=Pe`
       background-color: white;
       border-radius: 20px;
       display: flex;
@@ -384,4 +391,4 @@ Error generating stack: `+i.message+`
           flex-direction: column;
           justify-content: space-evenly;
       }
-  `;return S.jsxs("div",{className:t,children:[S.jsx(vh,{activePage:e}),S.jsxs("div",{className:"content",children:[S.jsx(jh,{activePage:e}),S.jsx(Lh,{activePage:e,setActivePage:n})]})]})};function Rh(){return S.jsx("div",{className:"container",children:S.jsx(Th,{})})}xi.createRoot(document.getElementById("root")).render(S.jsx(yf.StrictMode,{children:S.jsx(Rh,{})}));
+  `;return S.jsxs("div",{className:t,children:[S.jsx(yh,{activePage:e}),S.jsxs("div",{className:"content",children:[S.jsx(Lh,{activePage:e}),S.jsx(Th,{activePage:e,setActivePage:n})]})]})};function Oh(){return S.jsx("div",{className:"container",children:S.jsx(Rh,{})})}xi.createRoot(document.getElementById("root")).render(S.jsx(yf.StrictMode,{children:S.jsx(Oh,{})}));
